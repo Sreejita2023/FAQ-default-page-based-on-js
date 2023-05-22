@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --active-color:#CF0C6B;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: linear-gradient(90.21deg, #C9D6FF 0.21%, #E2E2E2 109.37%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.box{
+    border: 2px solid rgb(139, 139, 139);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 40px;
+    padding: 15px;
+    
+}
+.box.active{
+    position: relative;    
+    background-color: white;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ques{
+    text-transform: capitalize;
+    font-weight: 800;
+}
+img{
+    width: inherit;
+    height: inherit;
+}
+.box.active  .text{
+    margin-top: 15px;
+    color: rgb(70, 70, 70);
+}
+.box.active ::before{
+    position: absolute;
+    z-index: 2;
+    background-image: url("image/comments.png");
+    width: 30px;
+    height: 30px;
+}
